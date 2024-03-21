@@ -23,7 +23,7 @@ from bot.helper.ext_utils.bot_utils import update_user_ldata, get_readable_file_
 
 handler_dict = {}
 fname_dict = {'rcc': 'RClone',
-              'prefix': 'Prefix ',
+              'prefix': 'Prefix',
               'suffix': 'Suffix',
               'remname': 'Remname',
               'ldump': 'Dump',
@@ -51,8 +51,8 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
     elif key == 'universal':
         buttons.ibutton("YT-DLP Options", f"userset {user_id} yt_opt")
         ytopt = 'Not Exists' if (val:=user_dict.get('yt_opt', config_dict.get('YT_DLP_OPTIONS', ''))) == '' else val
-        buttons.ibutton("Prefix", f"userset {user_id} prefix ")
-        prefix = user_dict.get('prefix ', 'Not Exists')
+        buttons.ibutton("Prefix", f"userset {user_id} prefix")
+        prefix = user_dict.get('prefix', 'Not Exists')
 
         buttons.ibutton("Suffix", f"userset {user_id} suffix")
         suffix = user_dict.get('suffix', 'Not Exists')
